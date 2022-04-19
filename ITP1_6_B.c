@@ -21,39 +21,22 @@ int main(void) {
     }
     for(int i = 0; i < 13; i++) {
         if(s[i] == 0) {
-            if(temp++ == 0) {
-                printf("S %d", i + 1);
-            } else {
-                printf("\nS %d", i + 1);
-            }
-            
+printf("\nS %d", i + 1);
         }
     }
     for(int i = 0; i < 13; i++) {
         if(h[i] == 0) {
-            if(temp++ == 0) {
-                printf("H %d", i + 1);
-            } else {
-                printf("\nH %d", i + 1);
-            }
+printf("\nH %d", i + 1);
         }
     }
     for(int i = 0; i < 13; i++) {
         if(c[i] == 0) {
-            if(temp++ == 0) {
-                printf("C %d", i + 1);
-            } else {
-                printf("\nC %d", i + 1);
-            }
+printf("\nC %d", i + 1);
         }
     }
     for(int i = 0; i < 13; i++) {
         if(d[i] == 0) {
-            if(temp++ == 0) {
-                printf("D %d", i + 1);
-            } else {
-                printf("\nD %d", i + 1);
-            }
+printf("\nD %d", i + 1);
         }
     }
 
