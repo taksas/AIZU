@@ -6,7 +6,7 @@ int main(void) {
     for(int i = 0; i < 13; i++) {
         s[i] = h[i] = c[i] = d[i]= 0;
     }
-    scanf("%d", &n1);
+    scanf("%d ", &n1);
     for(int i = 0; i < n1; i++) {
         scanf("%s %d", &r, &n2);
         if (r == 'S') {
@@ -21,22 +21,39 @@ int main(void) {
     }
     for(int i = 0; i < 13; i++) {
         if(s[i] == 0) {
-printf("\nS %d", i + 1);
+            if(temp++ == 0) {
+                printf("S %d ", i + 1);
+            } else {
+                printf("\nS %d ", i + 1);
+            }
+            
         }
     }
     for(int i = 0; i < 13; i++) {
         if(h[i] == 0) {
-printf("\nH %d", i + 1);
+            if(temp++ == 0) {
+                printf("H %d ", i + 1);
+            } else {
+                printf("\nH %d ", i + 1);
+            }
         }
     }
     for(int i = 0; i < 13; i++) {
         if(c[i] == 0) {
-printf("\nC %d", i + 1);
+            if(temp++ == 0) {
+                printf("C %d ", i + 1);
+            } else {
+                printf("\nC %d ", i + 1);
+            }
         }
     }
     for(int i = 0; i < 13; i++) {
         if(d[i] == 0) {
-printf("\nD %d", i + 1);
+            if(temp++ == 0) {
+                printf("D %d ", i + 1);
+            } else {
+                printf("\nD %d ", i + 1);
+            }
         }
     }
 
