@@ -2,11 +2,13 @@
 
 
 int main(void) {
-    int m, f, r, result[50];
-    for (int i = 0; i < 50; i++) {
-        if ( m != -1 && f != -1 && r != -1) {
+    int m, f, r, i, result[50];
+    m = f = r = 0;
+    for (i = 0; i < 50; i++) {
             scanf("%d %d %d", &m, &f, &r);
-            if ( m == -1 || f == -1) {
+            if (  m == -1 && f == -1 && r == -1 ){
+                break;
+            } else if ( m == -1 || f == -1) {
                 result[i] = 5;
             } else if ( ( m + f ) >= 80 ) {
                 result[i] = 1;
@@ -23,24 +25,18 @@ int main(void) {
             } else {
                 result[i] = 5;
             }
-        } else {
-            result[i] = 6;
-            break;
-        }
     }
-    for (int i = 0; i < 50; i++) {
-        if (result[i] == 1) {
+    for (int j = 0 ; j < i; j++) {
+        if (result[j] == 1) {
             printf("A\n");
-        } else if (result[i] == 2) {
+        } else if (result[j] == 2) {
             printf("B\n");
-        } else if (result[i] == 3) {
+        } else if (result[j] == 3) {
             printf("C\n");
-        } else if (result[i] == 4) {
+        } else if (result[j] == 4) {
             printf("D\n");
-        } else if (result[i] == 5) {
+        } else if (result[j] == 5) {
             printf("F\n");
-        } else {
-            break;
         }
     }
     return 0;
