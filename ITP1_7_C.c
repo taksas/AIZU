@@ -2,7 +2,7 @@
 
 
 int main(void) {
-    int r, c, n, temp1, hyo[10201];
+    int r, c, n, temp1, hyo[10897];
     int x = 0;
     int p = 0;
     int q = 1;
