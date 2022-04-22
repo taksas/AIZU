@@ -3,7 +3,7 @@
 
 int main(void) {
     int r, c, n, temp1, hyo[10201];
-    unsigned int x = 0;
+    int x = 0;
     int p = 0;
     int q = 1;
     scanf("%d %d", &r, &c);
@@ -15,6 +15,10 @@ int main(void) {
         hyo[x++] = 0;
     }
     
+
+  //  printf("\n\n\n");
+
+
     for (int i = 1; i <= r * c; i++) {
         if ( i % c == 0) {
             temp1 = i - c + p;
@@ -25,7 +29,7 @@ int main(void) {
         }
     }
     for (int i = 0; i <= c; i++) {
-        for (unsigned int j = i; j < r * (c + 1); j += c + 1) {
+        for (int j = i; j < r * (c + 1); j += c + 1) {
             hyo[x] += hyo[j];
         }
         x++;
