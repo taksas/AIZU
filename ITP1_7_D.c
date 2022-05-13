@@ -31,9 +31,8 @@ int main(void) {
                 printf("%d", result[i][j]);
             }
         }
-        if ( i != n - 1) {
             printf("\n");
-        }
+
     }
 
 
